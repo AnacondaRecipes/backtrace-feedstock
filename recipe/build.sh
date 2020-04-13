@@ -2,5 +2,5 @@
 
 ./configure --prefix="${PREFIX}" --enable-shared --enable-static
 make
-# make check
+make check
 make install
