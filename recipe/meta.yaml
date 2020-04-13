@@ -26,7 +26,7 @@ test:
 
 about:
     home: https://github.com/ianlancetaylor/libbacktrace
-    license: BSD 3-clause
+    license: BSD-3-Clause
     summary: A C library that may be linked into a C/C++ program to produce symbolic backtraces
     license_file: LICENSE
 
