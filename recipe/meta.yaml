@@ -1,12 +1,12 @@
-{% set version = "20220708" %}
+{% set version = "20241216" %}
 
 package:
     name: backtrace
     version: {{ version }}
 
 source:
-    url: https://github.com/ianlancetaylor/libbacktrace/archive/8602fda64e78f1f46563220f2ee9f7e70819c51d.zip
-    sha256: 900944e725051a5d0fd3b08d22c1563c73ca94817b95c79c0a081f4c621b290e
+    url: https://github.com/ianlancetaylor/libbacktrace/archive/1db85642e3fca189cf4e076f840a45d6934b2456.zip
+    sha256: 9211bb87add7ccdca625ac75dbd4e9f5726f1e99da54c4f1583d0fa21e380c9b
 
 build:
     number: 0
