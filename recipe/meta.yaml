@@ -20,7 +20,7 @@ requirements:
         - libcxx     # [osx]
         - make       # [unix]
     host:
-        - zlib
+        - zlib {{ zlib }}
 
 test:
     commands:
