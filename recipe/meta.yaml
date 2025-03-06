@@ -17,10 +17,10 @@ build:
 requirements:
     build:
         - {{ compiler('c') }}
-        - {{ stdlib("c") }}
+        - libcxx     # [osx]
         - make       # [unix]
     host:
-        - zlib
+        - zlib {{ zlib }}
 
 test:
     commands:
@@ -31,9 +31,15 @@ test:
 
 about:
     home: https://github.com/ianlancetaylor/libbacktrace
-    license: BSD-3-Clause
+    dev_url: https://github.com/ianlancetaylor/libbacktrace
+    doc_url: https://github.com/ianlancetaylor/libbacktrace
     summary: A C library that may be linked into a C/C++ program to produce symbolic backtraces
+    description: |
+        Libbacktrace is a lightweight C library for generating symbolic backtraces in C/C++ apps. 
+        It supports various executable formats with DWARF debugging and is ideal for error reporting and profiling.
+    license: BSD-3-Clause
     license_file: LICENSE
+    license_family: BSD
 
 extra:
     recipe-maintainers:
